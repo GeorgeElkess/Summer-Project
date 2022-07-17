@@ -10,7 +10,7 @@ namespace Summer_Project
 
         private void Form1_Load(object? sender, EventArgs e)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }
