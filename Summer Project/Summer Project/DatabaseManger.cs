@@ -1,12 +1,6 @@
 ﻿using Microsoft.Data.SqlClient;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Summer_Project
+namespace Remon_Database_Core_System.Models
 {
     public class Cell
     {
@@ -14,9 +8,12 @@ namespace Summer_Project
         public string String = null;
         public float Value = 0;
     }
-    public class GenerateInsert
+    public class InsertStatment
     {
         List<Cell> sql = new List<Cell>();
+        public InsertStatment() { }
+        public InsertStatment(string NewString) => Attach(NewString);
+        public InsertStatment(float NewValue) => Attach(NewValue);
         public void Attach(string NewString)
         {
             Cell cell = new Cell();
@@ -30,7 +27,7 @@ namespace Summer_Project
             cell.Value = NewValue;
             sql.Add(cell);
         }
-        public string? GetInsertStatment()
+        public string? GenerateInsertStatment()
         {
             if (sql.Count == 0) return null;
             string Line = "";
@@ -47,9 +44,12 @@ namespace Summer_Project
     {
         public string ColmnName = "";
     }
-    public class GenerateCondition
+    public class Condition
     {
         List<DoubleCell> condition = new List<DoubleCell>();
+        public Condition() { }
+        public Condition(string ColumnName, float value) => Attach(ColumnName, value);
+        public Condition(string ColumnName, string value) => Attach(ColumnName, value);
         public void Attach(string ColumnName, string NewString)
         {
             DoubleCell cell = new DoubleCell();
@@ -65,7 +65,7 @@ namespace Summer_Project
             cell.ColmnName = ColumnName;
             condition.Add(cell);
         }
-        public string? GetCondition()
+        public string? GenerateCondition()
         {
             if (condition.Count == 0) return null;
             string Line = "";
@@ -79,9 +79,12 @@ namespace Summer_Project
             return Line;
         }
     }
-    public class GenerateSet
+    public class SetStatment
     {
         List<DoubleCell> condition = new List<DoubleCell>();
+        public SetStatment() { }
+        public SetStatment(string ColumnName, string NewString) => Attach(ColumnName, NewString);
+        public SetStatment(string ColumnName, float NewValue) => Attach(ColumnName, NewValue);
         public void Attach(string ColumnName, string NewString)
         {
             DoubleCell cell = new DoubleCell();
@@ -97,7 +100,7 @@ namespace Summer_Project
             cell.ColmnName = ColumnName;
             condition.Add(cell);
         }
-        public string? GetSetStatment()
+        public string? GenerateSetStatment()
         {
             if (condition.Count == 0) return null;
             string Line = "";
@@ -111,26 +114,23 @@ namespace Summer_Project
             return Line;
         }
     }
-    internal class DataBaseManger
+    public class DataBaseManger
     {
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-82NJIQUH;Initial Catalog=Msa;Integrated Security=True;");
-        public string TableName;
-        public DataBaseManger(string TableName)
+        string TableName;
+        public DataBaseManger(string TableName) => this.TableName = TableName;
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-82NJIQUH;Initial Catalog=Remon's Database;Integrated Security=True;");
+        public void Create(InsertStatment insert)
         {
-            this.TableName = TableName;
-        }
-        public void Insert(GenerateInsert x)
-        {
-            string Data = x.GetInsertStatment();
+            string Data = insert.GenerateInsertStatment();
             con.Open();
-            SqlCommand cmd = new SqlCommand("Insert Into " + TableName + " Values(" + Data + ")");
+            SqlCommand cmd = new SqlCommand($"Insert Into {TableName} Values({Data})");
             cmd.Connection = con;
             cmd.ExecuteNonQuery();
             con.Close();
         }
-        public List<List<string>> Read(GenerateCondition x)
+        public List<List<string>> GetAll(Condition x = null)
         {
-            string Condition = x.GetCondition();
+            string Condition = x is null ? "" : x.GenerateCondition();
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * From " + TableName + ((Condition != "") ? " Where " + Condition : ""));
             cmd.Connection = con;
@@ -148,32 +148,19 @@ namespace Summer_Project
             con.Close();
             return Data;
         }
-        /// <summary>
-        /// Make DataTable for Printing From the information
-        /// </summary>
-        /// <param name="Headers">The Header of the Table</param>
-        /// <param name="Data">the Info of the Table</param>
-        /// <returns>The DataTable for Printing</returns>
-        public DataTable GetTable(List<string> Headers, List<List<string>> Data)
+        public void Delete(Condition x)
         {
-            DataTable Table = new DataTable();
-            foreach (string item in Headers) Table.Columns.Add(item);
-            for (int i = 0; i < Data.Count; i++) Table.Rows.Add(Data[i].ToArray());
-            return Table;
-        }
-        public void Delete(GenerateCondition x)
-        {
-            string Condition = x.GetCondition();
+            string Condition = x.GenerateCondition();
             con.Open();
             SqlCommand cmd = new SqlCommand("Delete " + TableName + " Where " + Condition);
             cmd.Connection = con;
             cmd.ExecuteNonQuery();
             con.Close();
         }
-        public void Update(GenerateCondition x, GenerateSet y)
+        public void Edit(Condition x, SetStatment y)
         {
-            string Condition = x.GetCondition();
-            string Set = y.GetSetStatment();
+            string Condition = x.GenerateCondition();
+            string Set = y.GenerateSetStatment();
             con.Open();
             SqlCommand cmd = new SqlCommand("Update " + TableName + " Set " + Set + " Where " + Condition);
             cmd.Connection = con;

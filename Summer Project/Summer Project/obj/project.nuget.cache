@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0m/9ot3wNnylb+Cl9ELZQY87Atzjwz3NmW9QvrD46v1iQGkfpbOG2mJQ6MXmOJQ+/a+ZeaYpPTKSoGYy5/KRkQ==",
+  "dgSpecHash": "TJsPEs+EA5jwOFGh5PUI3I/sGQg94LxgP+aiqu/L7PabMLUpfYg8U1NQa6pdrISW1vjt3e94Gr63G/+a/t2PgQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\George Elkomos\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
+  "projectFilePath": "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\George Elkomos\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\George Elkomos\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",
