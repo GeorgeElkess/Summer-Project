@@ -1,7 +1,24 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj": {}
+=======
+<<<<<<< HEAD
+    "C:\\Users\\nv\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\nv\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\nv\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
+        "projectName": "Summer Project",
+        "projectPath": "C:\\Users\\nv\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
+        "packagesPath": "C:\\Users\\nv\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nv\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\obj\\",
+=======
+    "C:\\Users\\ahmed mohamed\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj": {}
+>>>>>>> 829278a486a6ae9a241144fdf068b91bfe1279d3
   },
   "projects": {
     "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj": {
@@ -9,16 +26,28 @@
       "restore": {
         "projectUniqueName": "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
         "projectName": "Summer Project",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
         "packagesPath": "C:\\Users\\George Elkomos\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\obj\\",
+=======
+        "projectPath": "C:\\Users\\ahmed mohamed\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
+        "packagesPath": "C:\\Users\\ahmed mohamed\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ahmed mohamed\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\obj\\",
+>>>>>>> dd4217fbed9ba1b5d8978e674a55c79c6d7a79d6
+>>>>>>> 829278a486a6ae9a241144fdf068b91bfe1279d3
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\George Elkomos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+<<<<<<< HEAD
+          "C:\\Users\\nv\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\ahmed mohamed\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> 829278a486a6ae9a241144fdf068b91bfe1279d3
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> dd4217fbed9ba1b5d8978e674a55c79c6d7a79d6
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -71,7 +100,15 @@
               "privateAssets": "none"
             }
           },
+<<<<<<< HEAD
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+=======
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.107\\RuntimeIdentifierGraph.json"
+=======
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.302\\RuntimeIdentifierGraph.json"
+>>>>>>> dd4217fbed9ba1b5d8978e674a55c79c6d7a79d6
+>>>>>>> 829278a486a6ae9a241144fdf068b91bfe1279d3
         }
       }
     }
