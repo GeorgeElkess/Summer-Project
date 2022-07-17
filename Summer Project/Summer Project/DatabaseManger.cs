@@ -118,7 +118,7 @@ namespace Remon_Database_Core_System.Models
     {
         string TableName;
         public DataBaseManger(string TableName) => this.TableName = TableName;
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-82NJIQUH;Initial Catalog=Remon's Database;Integrated Security=True;");
+        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-82NJIQUH;Initial Catalog=Summer Project;Integrated Security=True;");
         public void Create(InsertStatment insert)
         {
             string Data = insert.GenerateInsertStatment();
