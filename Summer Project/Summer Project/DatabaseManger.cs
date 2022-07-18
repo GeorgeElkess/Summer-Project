@@ -1,4 +1,5 @@
-﻿using System.Data.SqlClient;
+﻿using System.Data;
+using System.Data.SqlClient;
 
 namespace Remon_Database_Core_System.Models
 {
@@ -10,7 +11,7 @@ namespace Remon_Database_Core_System.Models
     }
     public class InsertStatment
     {
-        List<Cell> sql = new List<Cell>();
+        public List<Cell> sql = new List<Cell>();
         public InsertStatment() { }
         public InsertStatment(string NewString) => Attach(NewString);
         public InsertStatment(float NewValue) => Attach(NewValue);
@@ -46,7 +47,7 @@ namespace Remon_Database_Core_System.Models
     }
     public class Condition
     {
-        List<DoubleCell> condition = new List<DoubleCell>();
+        public List<DoubleCell> condition = new List<DoubleCell>();
         public Condition() { }
         public Condition(string ColumnName, float value) => Attach(ColumnName, value);
         public Condition(string ColumnName, string value) => Attach(ColumnName, value);
@@ -81,7 +82,7 @@ namespace Remon_Database_Core_System.Models
     }
     public class SetStatment
     {
-        List<DoubleCell> condition = new List<DoubleCell>();
+        public List<DoubleCell> condition = new List<DoubleCell>();
         public SetStatment() { }
         public SetStatment(string ColumnName, string NewString) => Attach(ColumnName, NewString);
         public SetStatment(string ColumnName, float NewValue) => Attach(ColumnName, NewValue);
@@ -130,7 +131,7 @@ namespace Remon_Database_Core_System.Models
         }
         public List<List<string>> GetAll(Condition x = null)
         {
-            string Condition = x is null ? "" : x.GenerateCondition();
+            string Condition = (x is null  || x.condition.Count == 0) ? "" : x.GenerateCondition();
             con.Open();
             SqlCommand cmd = new SqlCommand("Select * From " + TableName + ((Condition != "") ? " Where " + Condition : ""));
             cmd.Connection = con;
@@ -168,4 +169,33 @@ namespace Remon_Database_Core_System.Models
             con.Close();
         }
     }
+    public class View
+    {
+        public static DataTable GetTable(List<List<string>> Data)
+        {
+            if (Data.Count == 0) return null;
+            DataTable Table = new DataTable();
+            for (int i = 0; i < Data[0].Count; i++) Table.Columns.Add(Data[0][i]);
+            for (int i = 1; i < Data.Count; i++) Table.Rows.Add(Data[i].ToArray());
+            return Table;
+        }
+        private View() { }
+        public static void Error(string Message)
+        {
+            MessageBox.Show(Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+        }
+        /// <summary>
+        /// Inform the User
+        /// </summary>
+        /// <param name="Massege"></param>
+        /// <returns> true if user press Ok false if user press Cancel</returns>
+        public static bool Inform(string Message)
+        {
+            DialogResult a = MessageBox.Show(Message, "Inform", MessageBoxButtons.OKCancel, MessageBoxIcon.Question);
+            if (a.ToString() != "OK") return false;
+            else return true;
+        }
+
+    }
+
 }
