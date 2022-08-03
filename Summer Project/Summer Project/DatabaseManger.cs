@@ -119,7 +119,7 @@ namespace Remon_Database_Core_System.Models
     {
         string TableName;
         public DataBaseManger(string TableName) => this.TableName = TableName;
-        SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-82NJIQUH;Initial Catalog=Summer Project;Integrated Security=True;");
+       public SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-9S5IK0LO;Initial Catalog=Almadina-Elmnora;Integrated Security=True");
         public void Create(InsertStatment insert)
         {
             string Data = insert.GenerateInsertStatment();
@@ -137,6 +137,7 @@ namespace Remon_Database_Core_System.Models
             cmd.Connection = con;
             SqlDataReader rdr = cmd.ExecuteReader();
             List<List<string>> Data = new List<List<string>>();
+            
             while (rdr.Read())
             {
                 List<string> DataList = new List<string>();
