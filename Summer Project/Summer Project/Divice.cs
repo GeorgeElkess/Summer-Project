@@ -225,12 +225,7 @@ namespace Summer_Project
             DrawDubb(this.CreateGraphics());
             counttick = 1;
         }
-        private void button8_Click(object sender, EventArgs e)
-        {
-           // storinlitem("FRIDGE");
-           // MessageBox.Show(litem[0].ToString());
-           // MessageBox.Show(ldevic_id[0].ToString());
-        }
+    
         void storinlitem(string x)
         {
             for (int i = 0; i < dataGridView1.Rows.Count; i++)
@@ -271,29 +266,38 @@ namespace Summer_Project
             this.Close();
             
         }
-
+        private void button8_Click(object sender, EventArgs e)
+        {
+            this.Controls.Clear();
+            this.InitializeComponent();
+            but3();
+        }
         private void button6_Click(object sender, EventArgs e)
         {
-            string name;
-            name=textBox4.Text.ToUpper();
-            if (name == "FRIDGE")
+            if(comboBox1.Text!=null)
             {
-                AddNewTextBox(630);
-                AddNewLabel(630,"Adam");
+                textBox4.Text=comboBox1.Text;
             }
-            if (name == "MKNSA")
-            {
-                AddNewTextBox(630);
-                AddNewLabel(630, "Watt");
-            }
-            if (name == "FORN")
-            {
-                 AddNewTextBox(630);
-                 AddNewLabel(630, "Liter");
-                 AddNewRadioButton(680,20, "ميكرويف");
-                 AddNewRadioButton(680,160, "فرن");
-                AddNewCheckBox(720, 20, "شوايه");
-            }
+                string name;
+                name = textBox4.Text.ToUpper();
+                if (name == "FRIDGE")
+                {
+                    AddNewTextBox(640);
+                    AddNewLabel(640, "Adam");
+                }
+                else if (name == "MKNSA")
+                {
+                    AddNewTextBox(640);
+                    AddNewLabel(640, "Watt");
+                }
+                else if (name == "FORN")
+                {
+                    AddNewTextBox(640);
+                    AddNewLabel(640, "Liter");
+                    AddNewRadioButton(690, 20, "ميكرويف");
+                    AddNewRadioButton(690, 160, "فرن");
+                    AddNewCheckBox(730, 20, "شوايه");
+                }
         }
         public System.Windows.Forms.RadioButton AddNewRadioButton(int x,int y, string n)
         {
@@ -355,6 +359,8 @@ namespace Summer_Project
 
         }
 
+       
+
         private void textBox4_TextChanged(object sender, EventArgs e)
         {
 
@@ -407,6 +413,7 @@ namespace Summer_Project
                     }
                     richTextBox1.Text = "";
         }
+       
         private void button1_Click(object sender, EventArgs e)
         {
             if (!GetAllData()) return;
