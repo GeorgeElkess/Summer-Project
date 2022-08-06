@@ -1985,11 +1985,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
+      "projectUniqueName": "C:\\Users\\George Elkomos\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
       "projectName": "Summer Project",
-      "projectPath": "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
+      "projectPath": "C:\\Users\\George Elkomos\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\Summer Project.csproj",
       "packagesPath": "C:\\Users\\George Elkomos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\obj\\",
+      "outputPath": "C:\\Users\\George Elkomos\\Source\\Repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -2052,13 +2052,5 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file C:\\Users\\George Elkomos\\source\\repos\\GeorgeElkess\\Summer-Project\\Summer Project\\Summer Project\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  }
 }

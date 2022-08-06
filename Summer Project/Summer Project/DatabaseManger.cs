@@ -5,6 +5,7 @@ namespace Remon_Database_Core_System.Models
 {
     public class Cell
     {
+        public string ColumnName = "";
         public bool IsString = false;
         public string String = null;
         public float Value = 0;
@@ -43,7 +44,7 @@ namespace Remon_Database_Core_System.Models
     }
     public class DoubleCell : Cell
     {
-        public string ColmnName = "";
+        public string ColumnName = "";
     }
     public class Condition
     {
@@ -56,14 +57,14 @@ namespace Remon_Database_Core_System.Models
             DoubleCell cell = new DoubleCell();
             cell.String = NewString;
             cell.IsString = true;
-            cell.ColmnName = ColumnName;
+            cell.ColumnName = ColumnName;
             condition.Add(cell);
         }
         public void Attach(string ColumnName, float NewValue)
         {
             DoubleCell cell = new DoubleCell();
             cell.Value = NewValue;
-            cell.ColmnName = ColumnName;
+            cell.ColumnName = ColumnName;
             condition.Add(cell);
         }
         public string? GenerateCondition()
@@ -72,7 +73,7 @@ namespace Remon_Database_Core_System.Models
             string Line = "";
             for (int i = 0; i < condition.Count; i++)
             {
-                Line += $"{condition[i].ColmnName}=";
+                Line += $"{condition[i].ColumnName}=";
                 if (condition[i].IsString) Line += $"'{condition[i].String}'";
                 else Line += $"{condition[i].Value}";
                 if (i < condition.Count - 1) Line += " and ";
@@ -91,14 +92,14 @@ namespace Remon_Database_Core_System.Models
             DoubleCell cell = new DoubleCell();
             cell.String = NewString;
             cell.IsString = true;
-            cell.ColmnName = ColumnName;
+            cell.ColumnName = ColumnName;
             condition.Add(cell);
         }
         public void Attach(string ColumnName, float NewValue)
         {
             DoubleCell cell = new DoubleCell();
             cell.Value = NewValue;
-            cell.ColmnName = ColumnName;
+            cell.ColumnName = ColumnName;
             condition.Add(cell);
         }
         public string? GenerateSetStatment()
@@ -107,7 +108,7 @@ namespace Remon_Database_Core_System.Models
             string Line = "";
             for (int i = 0; i < condition.Count; i++)
             {
-                Line += $"{condition[i].ColmnName}=";
+                Line += $"{condition[i].ColumnName}=";
                 if (condition[i].IsString) Line += $"'{condition[i].String}'";
                 else Line += $"{condition[i].Value}";
                 if (i < condition.Count - 1) Line += ", ";
