@@ -35,7 +35,7 @@ namespace Remon_Database_Core_System.Models
             string Line = "";
             for (int i = 0; i < sql.Count; i++)
             {
-                if (sql[i].IsString) Line += $"'{sql[i].String}'";
+                if (sql[i].IsString) Line += $"N'{sql[i].String}'";
                 else Line += $"{sql[i].Value}";
                 if (i < sql.Count - 1) Line += ", ";
             }
@@ -74,7 +74,7 @@ namespace Remon_Database_Core_System.Models
             for (int i = 0; i < condition.Count; i++)
             {
                 Line += $"{condition[i].ColumnName}=";
-                if (condition[i].IsString) Line += $"'{condition[i].String}'";
+                if (condition[i].IsString) Line += $"N'{condition[i].String}'";
                 else Line += $"{condition[i].Value}";
                 if (i < condition.Count - 1) Line += " and ";
             }
@@ -109,7 +109,7 @@ namespace Remon_Database_Core_System.Models
             for (int i = 0; i < condition.Count; i++)
             {
                 Line += $"{condition[i].ColumnName}=";
-                if (condition[i].IsString) Line += $"'{condition[i].String}'";
+                if (condition[i].IsString) Line += $"N'{condition[i].String}'";
                 else Line += $"{condition[i].Value}";
                 if (i < condition.Count - 1) Line += ", ";
             }
@@ -120,7 +120,7 @@ namespace Remon_Database_Core_System.Models
     {
         string TableName;
         public DataBaseManger(string TableName) => this.TableName = TableName;
-       public SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-9S5IK0LO;Initial Catalog=Almadina-Elmnora;Integrated Security=True");
+       public SqlConnection con = new SqlConnection(@"Data Source=LAPTOP-82NJIQUH;Initial Catalog=Summer Project;Integrated Security=True");
         public void Create(InsertStatment insert)
         {
             string Data = insert.GenerateInsertStatment();

@@ -287,6 +287,7 @@ namespace Summer_Project.Models
                     SerialManger.Create(insertStatment);
                 }
             }
+            this.RemoveDiviceWithNoSerial();
             return true;
         }
         public bool Update()
@@ -306,6 +307,7 @@ namespace Summer_Project.Models
             OldDivice.SerialNumber = SerialNumber;
             OldDivice.Delete();
             this.Add();
+            this.RemoveDiviceWithNoSerial();
             return true;
         }
         public List<Divice> GetAll()
@@ -361,7 +363,19 @@ namespace Summer_Project.Models
         {
             if (SerialNumber == "") return false;
             SerialManger.Delete(new Condition("SerialNumber", SerialNumber));
+            this.RemoveDiviceWithNoSerial();
             return true;
+        }
+        public void RemoveDiviceWithNoSerial()
+        {
+            List<Divice> x = new Divice().GetAll();
+            foreach (var item in x)
+            {
+                if (item.GetDiviceNumber() == 0)
+                {
+                    DiviceManger.Delete(new Condition("Id", item.Id));
+                }
+            }
         }
         public static List<List<string>> FromDivicesToStrings(List<Divice> divices)
         {

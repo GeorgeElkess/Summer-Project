@@ -55,3 +55,60 @@ C:\Users\ahmed mohamed\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\S
 C:\Users\ahmed mohamed\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\ref\Summer Project.dll
 C:\Users\ahmed mohamed\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer_Project.Properties.Resources.resources
 C:\Users\ahmed mohamed\source\repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer_Project.Search.resources
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Summer Project.exe
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Summer Project.deps.json
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Summer Project.runtimeconfig.json
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Summer Project.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\ref\Summer Project.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Summer Project.pdb
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Data.SqlClient.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Caching.Memory.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Options.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Extensions.Primitives.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.Identity.Client.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Logging.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\Microsoft.IdentityModel.Tokens.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\System.Data.SqlClient.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\System.Runtime.Caching.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win-arm64\native\sni.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win-x64\native\sni.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win-x86\native\sni.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\bin\Debug\net6.0-windows\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.csproj.AssemblyReference.cache
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer_Project.Divice.resources
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer_Project.Form1.resources
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer_Project.fridge.resources
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer_Project.Properties.Resources.resources
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer_Project.Search.resources
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.csproj.GenerateResource.cache
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.AssemblyInfoInputs.cache
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.AssemblyInfo.cs
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.csproj.CoreCompileInputs.cache
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.csproj.CopyComplete
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\ref\Summer Project.dll
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.pdb
+C:\Users\George Elkomos\Source\Repos\GeorgeElkess\Summer-Project\Summer Project\Summer Project\obj\Debug\net6.0-windows\Summer Project.genruntimeconfig.cache
